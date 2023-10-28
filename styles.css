@@ -49,30 +49,35 @@ header {
   text-align: center;
 }
 
-header a {
-  text-decoration: none;
-  color: white;
-  font-size: 22px;
+header h1 {
+  padding: 20px;
+  font-size: 40px;
   font-weight: bold;
 }
 
-header a:hover {
+header h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+header h1 a:hover {
   color: #ebebeb;
   text-shadow: 0 4px black;
 }
 
 /* Estilos para el menú de navegación */
 nav {
+  display: flex;
+  justify-content: center;
   background-color: #e81923;
-  text-align: center;
   padding: 10px;
+  gap: 20px;
   font-size: 18px;
 }
 
 nav a {
   text-decoration: none;
   color: white;
-  margin: 10px;
 }
 
 nav a:hover {
