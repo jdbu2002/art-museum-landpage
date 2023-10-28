@@ -11,6 +11,7 @@
   </head>
 
   <body>
+    <!-- Input para saber si el menú lateral se debe abrir o no -->
     <input type="checkbox" id="lateral" />
     <!-- Encabezado de la pagina -->
     <header id="inicio">
@@ -109,7 +110,7 @@
       </section>
     </main>
 
-    <!--Pie de página para regresar arriba -->
+    <!-- Pie de página para regresar arriba -->
     <footer>
       <p>
         ¡Has llegado al final de esta página, ¿quieres regresar arriba? Da clic
@@ -117,6 +118,7 @@
       </p>
     </footer>
 
+    <!-- Menú lateral (oculto) -->
     <aside class="menuLateral">
       <div class="tituloLateral">
         <label class="botonLateral" for="lateral">
@@ -128,10 +130,20 @@
       </div>
       <hr />
       <nav>
-        <a href="historia.html">Historia</a>
-        <a href="actividades.html">Actividades</a>
-        <a href="personajes.html">Personajes</a>
-        <a href="bibliografia.html">Bibliografía</a>
+        <ul>
+          <li><a href="index.html" class="seleccionado">Inicio</a></li>
+          <li>
+            <a href="historia.html">Historia</a>
+            <ul>
+              <li><a href="historia.html#siglo1">Siglo XIX</a></li>
+              <li><a href="historia.html#siglo2">Siglo XX</a></li>
+              <li><a href="historia.html#siglo3">Siglo XXI</a></li>
+            </ul>
+          </li>
+          <li><a href="actividades.html">Actividades</a></li>
+          <li><a href="personajes.html">Personajes</a></li>
+          <li><a href="bibliografia.html">Bibliografía</a></li>
+        </ul>
       </nav>
     </aside>
   </body>

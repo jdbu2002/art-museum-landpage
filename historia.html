@@ -4,203 +4,229 @@
     <!-- Propiedades del documento -->
     <meta charset="UTF-8" />
     <meta lang="es" />
-    <title>Museo metropolitano de arte - Historia</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Museo metropolitano de arte</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" type="image/png" href="imagenes/icono.png" />
   </head>
+
   <body>
+    <!-- Input para saber si el menú lateral se debe abrir o no -->
+    <input type="checkbox" id="lateral" />
     <!-- Encabezado de la pagina -->
     <header id="inicio">
-      <a href="index.html">
-        <h1>Museo Metropolitano de Arte</h1>
-      </a>
+      <label class="botonLateral" for="lateral">
+        <hr />
+        <hr />
+        <hr />
+      </label>
+
+      <!-- Título principal -->
+      <h1 class="tituloPrincipal">
+        <a href="index.html">Museo Metropolitano de Arte</a>
+      </h1>
+
+      <!-- Menu de navegacion -->
+      <nav class="menuPrincipal">
+        <a href="historia.html" class="seleccionado">Historia</a>
+        <a href="actividades.html">Actividades</a>
+        <a href="personajes.html">Personajes</a>
+        <a href="bibliografia.html">Bibliografía</a>
+      </nav>
     </header>
 
-    <!-- Menu de navegacion -->
-    <nav>
-      <a href="historia.html" class="seleccionado">Historia</a>
-      <a href="actividades.html">Actividades</a>
-      <a href="personajes.html">Personajes</a>
-      <a href="bibliografia.html">Bibliografía</a>
-    </nav>
+    <main>
+      <section class="maximo">
+        <!-- Primer titulo nivel 1 -->
+        <h1>Historia</h1>
 
-    <div class="maximo">
-      <!-- Primer titulo nivel 1 -->
-      <h1>Historia</h1>
+        <hr />
 
-      <hr />
+        <h2>Contenido de Historia</h2>
 
-      <h2>Contenido de Historia</h2>
+        <!-- Indice del contenido de la pagina con scroll -->
+        <nav>
+          <ol class="lista">
+            <li><a href="#Siglo1">Siglo XIX</a></li>
+            <li><a href="#Siglo2">Siglo XX</a></li>
+            <li><a href="#Siglo3">Siglo XXI</a></li>
+          </ol>
+        </nav>
 
-      <!-- Indice del contenido de la pagina con scroll -->
-      <ol class="lista">
-        <li><a href="#Siglo1">Siglo XIX</a></li>
-        <li><a href="#Siglo2">Siglo XX</a></li>
-        <li><a href="#Siglo3">Siglo XXI</a></li>
-      </ol>
+        <!-- Bloque con la informacion historica del museo -->
 
-      <hr />
+        <article>
+          <h2 id="Siglo1">Siglo XIX</h2>
+          <hr />
 
-      <!-- Bloque con la informacion historica del museo -->
+          <p>
+            El 13 de abril de 1870, la Asamblea Legislativa del Estado de Nueva
+            York otorgó al Museo Metropolitano de Arte un Acta de Constitución
+            "con el fin de establecer y mantener en dicha ciudad un Museo y una
+            Biblioteca de Arte, de fomentar y desarrollar el estudio de las
+            Bellas Artes y la aplicación del Arte a la manufactura y a la vida
+            natural, de promover el conocimiento general de temas afines y, a
+            tal fin, de proporcionar instrucción popular y actividades
+            recreativas". Esta legislación se completó posteriormente con la Ley
+            de 1893, capítulo 476, que exigía que sus colecciones "se
+            mantuvieran abiertas y accesibles al público gratuitamente durante
+            todo el año". Entre los fundadores figuraban hombres de negocios y
+            financieros, entre ellos Theodore Roosevelt Sr., padre de Theodore
+            Roosevelt, 26º presidente de los EE.UU., así como destacados
+            artistas y pensadores de la época, que deseaban abrir un museo para
+            acercar el arte y la educación artística al pueblo estadounidense.
+            También contribuyó decisivamente a la fundación del museo Henry
+            Gurdon Marquand, que donó a la incipiente institución su vasta
+            colección de cuadros de maestros antiguos. La familia Marquand
+            mantuvo un interés diverso en la filantropía basada en el arte,
+            habiendo donado grandes sumas de dinero a la Universidad de
+            Princeton, así como fundando la Biblioteca Pequot de Southport, una
+            institución de colecciones especiales.
+          </p>
 
-      <h2 id="Siglo1">Siglo XIX</h2>
+          <p>
+            El museo abrió sus puertas el 20 de febrero de 1872, en un edificio
+            ubicado en el 681 de la Quinta Avenida. John Taylor Johnston, un
+            ejecutivo ferroviario cuya colección personal de arte sembró el
+            museo, sirvió como su primer presidente, y el editor George Palmer
+            Putnam llegó a bordo como su superintendente fundador. El artista
+            Eastman Johnson actuó como co-fundador del museo, al igual que el
+            pintor de paisajes Frederic Edwin Church. Varios otros industriales,
+            artistas y científicos de la época sirvieron como cofundadores,
+            incluyendo Howard Potter, Salem Howe Wales, y Henry Gurdon Marquand.
+            Las muchas obras donadas del marqués se pueden ver en el museo en la
+            forma Marquand Collection. El antiguo oficial de la Guerra Civil,
+            Luigi Palma di Cesnola, fue nombrado como su primer director. Sirvió
+            desde 1879 hasta 1904. Bajo su dirección, las posesiones del Met,
+            inicialmente consistentes en un sarcófago de piedra romano y 174
+            pinturas en su mayoría europeas, rápidamente superaron el espacio
+            disponible. En 1873, debido a la compra por el Met de la Colección
+            Cesnola de antigüedades chipriotas, el museo se retiró de la Quinta
+            Avenida y se instaló en la Mansión Mrs. Nicholas Cruger, también
+            conocida como la Mansión Douglas (James Renwick, 1853-54, demolida
+            en 1928) en 128 West 14th Street. Sin embargo, estos nuevos
+            alojamientos resultaron ser temporales, ya que la creciente
+            colección requería más espacio del que la mansión podría
+            proporcionar. Se trasladó al edificio actual en 1880. Entre 1879 y
+            1895, el museo creó y operó una serie de programas educativos,
+            conocidos como el Museo Metropolitano de Escuelas de Arte,
+            destinados a proporcionar formación profesional y clases de bellas
+            artes.
+          </p>
+        </article>
+        <br /><br />
+        <article>
+          <h2 id="Siglo2">Siglo XX</h2>
+          <hr />
 
-      <p>
-        El 13 de abril de 1870, la Asamblea Legislativa del Estado de Nueva York
-        otorgó al Museo Metropolitano de Arte un Acta de Constitución "con el
-        fin de establecer y mantener en dicha ciudad un Museo y una Biblioteca
-        de Arte, de fomentar y desarrollar el estudio de las Bellas Artes y la
-        aplicación del Arte a la manufactura y a la vida natural, de promover el
-        conocimiento general de temas afines y, a tal fin, de proporcionar
-        instrucción popular y actividades recreativas". Esta legislación se
-        completó posteriormente con la Ley de 1893, capítulo 476, que exigía que
-        sus colecciones "se mantuvieran abiertas y accesibles al público
-        gratuitamente durante todo el año". Entre los fundadores figuraban
-        hombres de negocios y financieros, entre ellos Theodore Roosevelt Sr.,
-        padre de Theodore Roosevelt, 26º presidente de los EE.UU., así como
-        destacados artistas y pensadores de la época, que deseaban abrir un
-        museo para acercar el arte y la educación artística al pueblo
-        estadounidense. También contribuyó decisivamente a la fundación del
-        museo Henry Gurdon Marquand, que donó a la incipiente institución su
-        vasta colección de cuadros de maestros antiguos. La familia Marquand
-        mantuvo un interés diverso en la filantropía basada en el arte, habiendo
-        donado grandes sumas de dinero a la Universidad de Princeton, así como
-        fundando la Biblioteca Pequot de Southport, una institución de
-        colecciones especiales.
-      </p>
+          <p>
+            En 1954, para celebrar la apertura de su sala de conciertos Grace
+            Rainey Rogers, el museo inauguró una serie de conciertos, añadiendo
+            conferencias de arte en 1956. Este "programa de conciertos y
+            conferencias" creció a lo largo de los años en 200 eventos cada
+            temporada. El programa presentó a artistas como Marian Anderson,
+            Cecilia Bartoli, Judy Collins, Marilyn Horne, Burl Ives, Juilliard
+            String Quartet, Yo-Yo Ma, Itzhak Perlman, Artur Rubinstein, András
+            Schiff, Nina Simone, Joan Sutherland y André Watts, así como
+            conferencias sobre historia del arte, música, danza, teatro e
+            historia social. El programa fue dirigido, desde su inicio hasta
+            1968, por William Kolodney, y desde 1969 hasta 2010, por Hilde
+            Limondjian.
+          </p>
 
-      <p>
-        El museo abrió sus puertas el 20 de febrero de 1872, en un edificio
-        ubicado en el 681 de la Quinta Avenida. John Taylor Johnston, un
-        ejecutivo ferroviario cuya colección personal de arte sembró el museo,
-        sirvió como su primer presidente, y el editor George Palmer Putnam llegó
-        a bordo como su superintendente fundador. El artista Eastman Johnson
-        actuó como co-fundador del museo, al igual que el pintor de paisajes
-        Frederic Edwin Church. Varios otros industriales, artistas y científicos
-        de la época sirvieron como cofundadores, incluyendo Howard Potter, Salem
-        Howe Wales, y Henry Gurdon Marquand. Las muchas obras donadas del
-        marqués se pueden ver en el museo en la forma Marquand Collection. El
-        antiguo oficial de la Guerra Civil, Luigi Palma di Cesnola, fue nombrado
-        como su primer director. Sirvió desde 1879 hasta 1904. Bajo su
-        dirección, las posesiones del Met, inicialmente consistentes en un
-        sarcófago de piedra romano y 174 pinturas en su mayoría europeas,
-        rápidamente superaron el espacio disponible. En 1873, debido a la compra
-        por el Met de la Colección Cesnola de antigüedades chipriotas, el museo
-        se retiró de la Quinta Avenida y se instaló en la Mansión Mrs. Nicholas
-        Cruger, también conocida como la Mansión Douglas (James Renwick,
-        1853-54, demolida en 1928) en 128 West 14th Street. Sin embargo, estos
-        nuevos alojamientos resultaron ser temporales, ya que la creciente
-        colección requería más espacio del que la mansión podría proporcionar.
-        Se trasladó al edificio actual en 1880. Entre 1879 y 1895, el museo creó
-        y operó una serie de programas educativos, conocidos como el Museo
-        Metropolitano de Escuelas de Arte, destinados a proporcionar formación
-        profesional y clases de bellas artes.
-      </p>
+          <p>
+            En la década de 1960, el gobierno del Met se amplió para incluir,
+            por primera vez, un presidente del consejo de administración en la
+            contemplación de un gran legado de la herencia de Robert Lehman.
+            Durante seis décadas Lehman construyó una colección de arte iniciada
+            por su padre en 1911 y dedicó mucho tiempo al Met, antes de
+            convertirse finalmente en el primer presidente de la junta del
+            Metropolitan en la década de 1960. Después de su muerte en 1969, la
+            Fundación Robert Lehman donó cerca de 3.000 obras de arte al Museo
+            Metropolitano de Arte. Ubicado en el ala Robert Lehman, que se abrió
+            al público en 1975 y fue financiado en gran parte por la Fundación
+            Lehman, el museo lo ha llamado "una de las colecciones de arte
+            privadas más extraordinarias jamás reunidas en los Estados Unidos".
+          </p>
 
-      <hr />
+          <p>
+            El Centenario del Museo Metropolitano de Arte se celebró con
+            exposiciones, simposios, conciertos, conferencias, la reapertura de
+            galerías reformadas, visitas especiales, eventos sociales y otra
+            programación durante dieciocho meses desde octubre de 1969 hasta la
+            primavera de 1971. Los eventos del centenario (incluyendo una casa
+            abierta, Centennial Ball, un curso de historia del arte de un año
+            para el público, y varias exposiciones educativas y itinerantes) y
+            publicaciones contaron con el apoyo de destacados neoyorquinos,
+            artistas, escritores, compositores, diseñadores de interiores e
+            historiadores del arte.
+          </p>
+        </article>
 
-      <h2 id="Siglo2">Siglo XX</h2>
+        <br /><br />
+        <article>
+          <h2 id="Siglo3">Siglo XXI</h2>
+          <hr />
 
-      <p>
-        En 1954, para celebrar la apertura de su sala de conciertos Grace Rainey
-        Rogers, el museo inauguró una serie de conciertos, añadiendo
-        conferencias de arte en 1956. Este "programa de conciertos y
-        conferencias" creció a lo largo de los años en 200 eventos cada
-        temporada. El programa presentó a artistas como Marian Anderson, Cecilia
-        Bartoli, Judy Collins, Marilyn Horne, Burl Ives, Juilliard String
-        Quartet, Yo-Yo Ma, Itzhak Perlman, Artur Rubinstein, András Schiff, Nina
-        Simone, Joan Sutherland y André Watts, así como conferencias sobre
-        historia del arte, música, danza, teatro e historia social. El programa
-        fue dirigido, desde su inicio hasta 1968, por William Kolodney, y desde
-        1969 hasta 2010, por Hilde Limondjian.
-      </p>
+          <p>
+            En 2009 Michael Gross publicó The Secret History of the Moguls and
+            the Money That Made the Metropolitan Museum, una historia social no
+            autorizada, y la librería del museo se negó a venderla.
+          </p>
 
-      <p>
-        En la década de 1960, el gobierno del Met se amplió para incluir, por
-        primera vez, un presidente del consejo de administración en la
-        contemplación de un gran legado de la herencia de Robert Lehman. Durante
-        seis décadas Lehman construyó una colección de arte iniciada por su
-        padre en 1911 y dedicó mucho tiempo al Met, antes de convertirse
-        finalmente en el primer presidente de la junta del Metropolitan en la
-        década de 1960. Después de su muerte en 1969, la Fundación Robert Lehman
-        donó cerca de 3.000 obras de arte al Museo Metropolitano de Arte.
-        Ubicado en el ala Robert Lehman, que se abrió al público en 1975 y fue
-        financiado en gran parte por la Fundación Lehman, el museo lo ha llamado
-        "una de las colecciones de arte privadas más extraordinarias jamás
-        reunidas en los Estados Unidos".
-      </p>
+          <p>
+            En 2012, tras el anterior nombramiento de Daniel Brodsky como
+            presidente de la junta del Met, los estatutos del museo se
+            modificaron formalmente para reconocer que la oficina del presidente
+            tiene autoridad sobre la asignación y revisión de los cargos de
+            presidente y director del museo. La oficina del presidente se
+            introdujo por primera vez relativamente tarde en la historia del
+            museo en la década de 1960 en la contemplación de la donación
+            anticipada de la colección Lehman al museo y desde entonces, bajo
+            Brodsky, se ha convertido en la posición administrativa más alta en
+            el museo.
+          </p>
 
-      <p>
-        El Centenario del Museo Metropolitano de Arte se celebró con
-        exposiciones, simposios, conciertos, conferencias, la reapertura de
-        galerías reformadas, visitas especiales, eventos sociales y otra
-        programación durante dieciocho meses desde octubre de 1969 hasta la
-        primavera de 1971. Los eventos del centenario (incluyendo una casa
-        abierta, Centennial Ball, un curso de historia del arte de un año para
-        el público, y varias exposiciones educativas y itinerantes) y
-        publicaciones contaron con el apoyo de destacados neoyorquinos,
-        artistas, escritores, compositores, diseñadores de interiores e
-        historiadores del arte.
-      </p>
+          <p>
+            De 2016 a 2020, el museo operó una galería de arte moderno y
+            contemporáneo en 945 Madison Avenue, un edificio diseñado por Marcel
+            Breuer en Madison Avenue y 75th Street en el Upper East Side de
+            Manhattan, el antiguo Whitney Museum of American Art. Amplía el
+            programa de arte moderno y contemporáneo del museo. En septiembre de
+            2018, se anunció que el Met tenía la intención de desalojar el Met
+            Breuer tres años antes, en 2020; la Colección Frick comenzó a ocupar
+            el espacio (todavía propiedad del Met) mientras que el edificio
+            principal se sometió a renovaciones.
+          </p>
 
-      <hr />
+          <p>
+            En enero de 2018, el presidente del museo, Daniel Weiss, anunció que
+            la política centenaria de admisión gratuita sería reemplazada por un
+            cargo de $ 25 a visitantes extranjeros y de fuera del estado, a
+            partir de marzo de 2018. El museo cerró temporalmente en marzo de
+            2020 durante la pandemia COVID-19 en la ciudad de Nueva York, y
+            reabrió a finales de agosto; esta fue la primera vez en más de un
+            siglo que el Met se cerró durante más de tres días consecutivos.
+          </p>
 
-      <h2 id="Siglo3">Siglo XXI</h2>
-
-      <p>
-        En 2009 Michael Gross publicó The Secret History of the Moguls and the
-        Money That Made the Metropolitan Museum, una historia social no
-        autorizada, y la librería del museo se negó a venderla.
-      </p>
-
-      <p>
-        En 2012, tras el anterior nombramiento de Daniel Brodsky como presidente
-        de la junta del Met, los estatutos del museo se modificaron formalmente
-        para reconocer que la oficina del presidente tiene autoridad sobre la
-        asignación y revisión de los cargos de presidente y director del museo.
-        La oficina del presidente se introdujo por primera vez relativamente
-        tarde en la historia del museo en la década de 1960 en la contemplación
-        de la donación anticipada de la colección Lehman al museo y desde
-        entonces, bajo Brodsky, se ha convertido en la posición administrativa
-        más alta en el museo.
-      </p>
-
-      <p>
-        De 2016 a 2020, el museo operó una galería de arte moderno y
-        contemporáneo en 945 Madison Avenue, un edificio diseñado por Marcel
-        Breuer en Madison Avenue y 75th Street en el Upper East Side de
-        Manhattan, el antiguo Whitney Museum of American Art. Amplía el programa
-        de arte moderno y contemporáneo del museo. En septiembre de 2018, se
-        anunció que el Met tenía la intención de desalojar el Met Breuer tres
-        años antes, en 2020; la Colección Frick comenzó a ocupar el espacio
-        (todavía propiedad del Met) mientras que el edificio principal se
-        sometió a renovaciones.
-      </p>
-
-      <p>
-        En enero de 2018, el presidente del museo, Daniel Weiss, anunció que la
-        política centenaria de admisión gratuita sería reemplazada por un cargo
-        de $ 25 a visitantes extranjeros y de fuera del estado, a partir de
-        marzo de 2018. El museo cerró temporalmente en marzo de 2020 durante la
-        pandemia COVID-19 en la ciudad de Nueva York, y reabrió a finales de
-        agosto; esta fue la primera vez en más de un siglo que el Met se cerró
-        durante más de tres días consecutivos.
-      </p>
-
-      <p>
-        En septiembre de 2020, el museo nombró a Patricia Marroquin Norby
-        (ascendencia Purépecha/Nde) como comisaria asociada inaugural del museo
-        de arte nativo americano. En mayo de 2021, el museo instaló una placa en
-        su fachada de la Quinta Avenida en reconocimiento a las comunidades
-        indígenas y al hecho de que el museo está situado en lo que
-        históricamente fue Lenapehoking. En noviembre, el Met recibió una
-        donación de 125 millones de dólares de Oscar L. Tang y Agnes Hsu-Tang,
-        el mayor regalo en la historia del museo. A cambio, el Met nombró sus
-        galerías de arte moderno y contemporáneo en honor a los Tangs. El
-        febrero siguiente, el Met contrató a Moody Nolan para renovar las
-        galerías del Antiguo Cercano Oriente y Chipre. La arquitecta mexicana
-        Frida Escobedo fue contratada en marzo de 2022 para renovar el ala Tang.
-      </p>
-    </div>
+          <p>
+            En septiembre de 2020, el museo nombró a Patricia Marroquin Norby
+            (ascendencia Purépecha/Nde) como comisaria asociada inaugural del
+            museo de arte nativo americano. En mayo de 2021, el museo instaló
+            una placa en su fachada de la Quinta Avenida en reconocimiento a las
+            comunidades indígenas y al hecho de que el museo está situado en lo
+            que históricamente fue Lenapehoking. En noviembre, el Met recibió
+            una donación de 125 millones de dólares de Oscar L. Tang y Agnes
+            Hsu-Tang, el mayor regalo en la historia del museo. A cambio, el Met
+            nombró sus galerías de arte moderno y contemporáneo en honor a los
+            Tangs. El febrero siguiente, el Met contrató a Moody Nolan para
+            renovar las galerías del Antiguo Cercano Oriente y Chipre. La
+            arquitecta mexicana Frida Escobedo fue contratada en marzo de 2022
+            para renovar el ala Tang.
+          </p>
+        </article>
+      </section>
+    </main>
 
     <!--Pie de página para regresar arriba -->
     <footer>
@@ -209,5 +235,34 @@
         <a href="#inicio">aquí</a>
       </p>
     </footer>
+
+    <!-- Menú lateral (oculto) -->
+    <aside class="menuLateral">
+      <div class="tituloLateral">
+        <label class="botonLateral" for="lateral">
+          <hr />
+          <hr />
+          <hr />
+        </label>
+        <h2>Menú de navegación</h2>
+      </div>
+      <hr />
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li>
+            <a href="historia.html" class="seleccionado">Historia</a>
+            <ul>
+              <li><a href="historia.html#siglo1">Siglo XIX</a></li>
+              <li><a href="historia.html#siglo2">Siglo XX</a></li>
+              <li><a href="historia.html#siglo3">Siglo XXI</a></li>
+            </ul>
+          </li>
+          <li><a href="actividades.html">Actividades</a></li>
+          <li><a href="personajes.html">Personajes</a></li>
+          <li><a href="bibliografia.html">Bibliografía</a></li>
+        </ul>
+      </nav>
+    </aside>
   </body>
 </html>
