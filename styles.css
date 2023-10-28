@@ -1,0 +1,209 @@
+/* Insertamos las fuentes que utilizaremos en la página */
+
+@font-face {
+  font-family: "Playfair";
+  src: url("fuentes/PlayfairDisplayRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair";
+  src: url("fuentes/PlayfairDisplayBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lupina";
+  src: url("fuentes/LupinaRegular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lupina";
+  src: url("fuentes/LupinaItalic.ttf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+  font-family: "Lupina", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: black;
+  background-image: url("imagenes/fondo.png");
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: #8a0e1b;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #ebebeb;
+  text-shadow: 0 4px black;
+}
+
+/* Estilos para el menú de navegación */
+nav {
+  background-color: #e81923;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+
+nav a:hover {
+  color: #fdffbb;
+  text-decoration: underline;
+}
+
+nav a.seleccionado {
+  color: #e6ec38;
+  text-decoration: underline;
+}
+
+/* Coloco que todos los títulos tengan la misma fuente */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair", sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+}
+
+img {
+  border: 3px solid #3c2807;
+}
+
+/* Estilos para el pie de página */
+
+footer {
+  clear: both;
+  color: white;
+  background-color: #e81923;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+}
+
+footer a {
+  color: #55f1ff;
+}
+
+footer a:hover {
+  color: #2eebfc;
+}
+
+footer a:visited {
+  color: #71b1ff;
+}
+
+/* Esta clase hace que el tamaño horizontal no sea tan grande */
+.maximo {
+  max-width: 1600px;
+  position: relative;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Estilos para imagenes */
+
+.imagenPrincipal {
+  padding: 10px;
+  text-align: center;
+  background-color: #ebebeb71;
+  margin: 30px 0;
+}
+
+.imagenPrincipal img {
+  margin: auto;
+  max-width: 80%;
+}
+
+/* Con esto añado las citas de imagenes y tablas */
+.cita {
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+}
+
+/* Con esto separo las secciones en dos columnas */
+.mitadIzquierda {
+  float: left;
+  max-width: 50%;
+}
+
+.mitadDerecha {
+  float: right;
+  max-width: 50%;
+}
+
+/* Estilos de la página principal */
+
+.imagenVanGogh {
+  max-width: 90%;
+}
+
+/* Estilos de la página de actividades */
+
+.imagen {
+  text-align: center;
+}
+
+.imagen img {
+  margin: auto;
+  max-width: 80%;
+}
+
+/* Estilos de la página de historia */
+.lista {
+  list-style: upper-roman;
+  margin: 10px;
+  font-size: 18px;
+}
+
+/* Estilos de la página de personajes */
+
+.tamañoFijoImagen {
+  width: 800px;
+  height: auto;
+}
+
+/* Estilos para la página de bibliografía */
+
+.listaSeparada {
+  list-style: square;
+  margin: 10px;
+}
+
+.listaSeparada li {
+  margin: 20px;
+  font-size: 18px;
+}
