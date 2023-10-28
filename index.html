@@ -4,21 +4,29 @@
     <!-- Propiedades del documento -->
     <meta charset="UTF-8" />
     <meta lang="es" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Museo metropolitano de arte</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="icon" type="image/png" href="imagenes/icono.png" />
   </head>
 
   <body>
+    <input type="checkbox" id="lateral" />
     <!-- Encabezado de la pagina -->
     <header id="inicio">
+      <label class="botonLateral" for="lateral">
+        <hr />
+        <hr />
+        <hr />
+      </label>
+
       <!-- Título principal -->
       <h1 class="tituloPrincipal">
         <a href="index.html">Museo Metropolitano de Arte</a>
       </h1>
 
       <!-- Menu de navegacion -->
-      <nav>
+      <nav class="menuPrincipal">
         <a href="historia.html">Historia</a>
         <a href="actividades.html">Actividades</a>
         <a href="personajes.html">Personajes</a>
@@ -89,7 +97,7 @@
           </p>
         </article>
 
-        <figure class="mitadDerecha imagen">
+        <figure class="imagen">
           <img
             src="imagenes/cuadroVanGogh.jpg"
             alt="Cuadro de Van Gogh"
@@ -108,5 +116,23 @@
         <a href="#inicio">aquí</a>
       </p>
     </footer>
+
+    <aside class="menuLateral">
+      <div class="tituloLateral">
+        <label class="botonLateral" for="lateral">
+          <hr />
+          <hr />
+          <hr />
+        </label>
+        <h2>Menú de navegación</h2>
+      </div>
+      <hr />
+      <nav>
+        <a href="historia.html">Historia</a>
+        <a href="actividades.html">Actividades</a>
+        <a href="personajes.html">Personajes</a>
+        <a href="bibliografia.html">Bibliografía</a>
+      </nav>
+    </aside>
   </body>
 </html>

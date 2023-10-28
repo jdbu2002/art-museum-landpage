@@ -42,8 +42,14 @@ body {
   background-image: url("imagenes/fondo.png");
 }
 
+/* Aquí ocultamos el checkbox del menú lateral */
+#lateral {
+  display: none;
+}
+
 /* Estilos para el encabezado */
 header {
+  position: relative;
   background-color: #8a0e1b;
   color: white;
   text-align: center;
@@ -65,8 +71,80 @@ header h1 a:hover {
   text-shadow: 0 4px black;
 }
 
+/*  Esto es para las tres rallitas que simbolizan el menú */
+.botonLateral {
+  position: absolute;
+  top: calc(50% - 15px);
+  left: 20px;
+
+  width: 30px;
+
+  cursor: pointer;
+  display: none;
+}
+
+.botonLateral hr {
+  border-color: white;
+  margin: 5px 0;
+}
+
+/* Estilos del menú lateral (sólo aparece en celulares)*/
+.menuLateral {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 300px;
+  height: 100vh;
+
+  border-right: 3px solid #e81923;
+
+  padding: 20px;
+
+  transform: translateX(-100%);
+
+  background-color: #8a0e1b;
+  color: white;
+
+  transition: transform 0.5s ease-in-out;
+}
+
+.menuLateral h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.menuLateral hr {
+  border-color: whitesmoke;
+}
+
+.menuLateral nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Aquí reutilizamos el botón del menú*/
+.menuLateral .botonLateral {
+  position: static;
+}
+
+.menuLateral .tituloLateral {
+  display: flex;
+  position: static;
+  width: 100%;
+  gap: 10px;
+}
+
+.menuLateral .tituloLateral h2 {
+  flex: 1;
+}
+
 /* Estilos para el menú de navegación */
-nav {
+.menuPrincipal {
   display: flex;
   justify-content: center;
   background-color: #e81923;
@@ -75,17 +153,20 @@ nav {
   font-size: 18px;
 }
 
-nav a {
+.menuPrincipal a,
+.menuLateral a {
   text-decoration: none;
   color: white;
 }
 
-nav a:hover {
+.menuPrincipal a:hover,
+.menuLateral a:hover {
   color: #fdffbb;
   text-decoration: underline;
 }
 
-nav a.seleccionado {
+.menuPrincipal a.seleccionado,
+.menuLateral a.seleccionado {
   color: #e6ec38;
   text-decoration: underline;
 }
@@ -182,6 +263,8 @@ footer a:visited {
   margin: 10px 0;
 }
 
+/* Aquí están los estilos de las páginas */
+
 /* Estilos de la página principal */
 
 .titulo {
@@ -200,6 +283,7 @@ footer a:visited {
 
 .imagen {
   text-align: center;
+  align-self: center;
 }
 
 .imagen img {
@@ -231,4 +315,57 @@ footer a:visited {
 .listaSeparada li {
   margin: 20px;
   font-size: 18px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+  header h1 {
+    font-size: 32px;
+  }
+
+  nav {
+    font-size: 20px;
+  }
+
+  .columnas {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .columnas * {
+    flex-basis: 500px !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .botonLateral {
+    display: block;
+  }
+
+  .menuPrincipal {
+    display: none;
+  }
+
+  .maximo {
+    padding: 40px;
+  }
+
+  /* Aumentar el tamaño para facilidad de lectura */
+  p {
+    font-size: 20px;
+  }
+
+  .cita {
+    font-size: 18px;
+  }
+
+  .menuLateral {
+    display: block;
+  }
+
+  /* Verifica si el botón del menú lateral está activo para mostrar el menú lateral*/
+  body:has(#lateral:checked) .menuLateral {
+    transform: translateX(0%);
+  }
 }
