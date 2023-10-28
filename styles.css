@@ -333,12 +333,17 @@ footer a:visited {
     gap: 10px;
   }
 
-  .columnas * {
-    flex-basis: 500px !important;
+  .separacion {
+    flex-basis: 100%;
+    flex-grow: 1;
   }
 }
 
 @media screen and (max-width: 800px) {
+  header h1 {
+    font-size: 22px;
+  }
+
   .botonLateral {
     display: block;
   }
