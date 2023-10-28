@@ -99,6 +99,7 @@ h5,
 h6 {
   font-family: "Playfair", sans-serif;
   font-weight: bold;
+  color: #3c2807;
 }
 
 p {
@@ -107,6 +108,13 @@ p {
 
 img {
   border: 3px solid #3c2807;
+}
+
+/* Aquí reestilizo las separaciones horizontales */
+hr {
+  border: 2px solid #3c2807;
+  border-radius: 9999px;
+  margin: 10px 0 20px 0;
 }
 
 /* Estilos para el pie de página */
@@ -137,21 +145,20 @@ footer a:visited {
   max-width: 1600px;
   position: relative;
   margin: auto;
-  padding: 0 20px;
+  padding: 20px;
 }
 
 /* Estilos para imagenes */
 
 .imagenPrincipal {
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   background-color: #ebebeb71;
-  margin: 30px 0;
 }
 
 .imagenPrincipal img {
   margin: auto;
-  max-width: 80%;
+  max-width: 75%;
 }
 
 /* Con esto añado las citas de imagenes y tablas */
@@ -159,25 +166,35 @@ footer a:visited {
   font-size: 16px;
   font-style: italic;
   text-align: center;
-  margin: 0;
   margin-top: 10px;
 }
 
-/* Con esto separo las secciones en dos columnas */
-.mitadIzquierda {
-  float: left;
-  max-width: 50%;
+/* Con esto separo las secciones en columnas */
+.columnas {
+  display: flex;
+  justify-content: center;
 }
 
-.mitadDerecha {
-  float: right;
-  max-width: 50%;
+.columnas * {
+  flex: 1 0 0;
+}
+
+.separacion * {
+  margin: 10px 0;
 }
 
 /* Estilos de la página principal */
 
+.titulo {
+  font-size: 32px;
+}
+
 .imagenVanGogh {
   max-width: 90%;
+}
+
+.italica {
+  font-style: italic;
 }
 
 /* Estilos de la página de actividades */
