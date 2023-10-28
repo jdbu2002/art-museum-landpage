@@ -120,11 +120,10 @@ hr {
 /* Estilos para el pie de página */
 
 footer {
-  clear: both;
   color: white;
   background-color: #e81923;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   font-size: 18px;
 }
 
