@@ -195,6 +195,7 @@ p {
 
 img {
   border: 3px solid #3c2807;
+  transition: all 0.5s ease-in-out;
 }
 
 /* Aquí reestilizo las separaciones horizontales */
@@ -202,6 +203,11 @@ hr {
   border: 2px solid #3c2807;
   border-radius: 9999px;
   margin: 10px 0 20px 0;
+}
+
+/* Se coloca un margen interno para cuando se haga un desplazamiento por ID */
+article {
+  scroll-margin: 20px;
 }
 
 /* Estilos para el pie de página */
@@ -297,7 +303,37 @@ footer a:visited {
   max-width: 80%;
 }
 
+.grilla {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.centradoVisita {
+  margin-top: 80px;
+}
+
+.centradoComidas {
+  margin-top: 240px;
+}
+
+.centradoObras {
+  margin-top: 20px;
+}
+
+.centradoTienda {
+  margin-top: 120px;
+}
+
+.centradoVisita:hover img,
+.centradoComidas:hover img,
+.centradoObras:hover img,
+.centradoTienda:hover img {
+  scale: 1.2;
+}
+
 /* Estilos de la página de historia */
+
 .lista {
   list-style: upper-roman;
   margin: 10px 0 40px 30px;
@@ -343,6 +379,16 @@ footer a:visited {
     flex-basis: 100%;
     flex-grow: 1;
   }
+
+  /* Página de Actividades */
+
+  .grilla {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .centradoComidas {
+    margin-top: 200px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -378,5 +424,18 @@ footer a:visited {
   /* Verifica si el botón del menú lateral está activo para mostrar el menú lateral*/
   body:has(#lateral:checked) .menuLateral {
     transform: translateX(0%);
+  }
+
+  /* Página de Actividades */
+
+  .grilla {
+    grid-template-columns: 1fr;
+  }
+
+  .centradoVisita,
+  .centradoComidas,
+  .centradoObras,
+  .centradoTienda {
+    margin: 20px 0 30px 0;
   }
 }
