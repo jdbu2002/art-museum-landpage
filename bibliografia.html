@@ -1,104 +1,173 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!-- Propiedades del documento -->
     <meta charset="UTF-8" />
     <meta lang="es" />
-    <title>Bibliografía</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Museo metropolitano de arte</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" type="image/png" href="imagenes/icono.png" />
   </head>
+
   <body>
     <!-- Encabezado de la pagina -->
+    <input type="checkbox" id="lateral" />
+    <!-- Encabezado de la pagina -->
     <header id="inicio">
-      <a href="index.html">
-        <h1>Museo Metropolitano de Arte</h1>
-      </a>
+      <label class="botonLateral" for="lateral">
+        <hr />
+        <hr />
+        <hr />
+      </label>
+
+      <!-- Título principal -->
+      <h1 class="tituloPrincipal">
+        <a href="index.html">Museo Metropolitano de Arte</a>
+      </h1>
+
+      <!-- Menu de navegacion -->
+      <nav class="menuPrincipal">
+        <a href="historia.html">Historia</a>
+        <a href="actividades.html">Actividades</a>
+        <a href="personajes.html">Personajes</a>
+        <a href="bibliografia.html" class="seleccionado">Bibliografía</a>
+      </nav>
     </header>
 
-    <!-- Menu de navegacion -->
-    <nav>
-      <a href="historia.html">Historia</a>
-      <a href="actividades.html">Actividades</a>
-      <a href="personajes.html">Personajes</a>
-      <a href="bibliografia.html" class="seleccionado">Bibliografía</a>
-    </nav>
+    <main class="maximo">
+      <article>
+        <h1>Autor</h1>
+        <hr />
+        <p>Josué David Briceño Urquijo</p>
+      </article>
+      <br />
+      <article>
+        <h1>Mapa de navegación</h1>
+        <hr />
+        <p>¡Trabajo en progreso!</p>
+      </article>
+      <br />
+      <article>
+        <h1>Bibliografia</h1>
+        <hr />
 
-    <div class="maximo">
-      <h1>Autor</h1>
+        <ul class="listaSeparada">
+          <li>
+            Colaboradores de Wikipedia. (2023).
+            <i>Museo Metropolitano de Arte.</i> Wikipedia, la enciclopedia
+            libre.
+            <br />
+            <a
+              target="_blank"
+              class="linkapa"
+              href="https://es.wikipedia.org/wiki/Museo_Metropolitano_de_Arte"
+              >https://es.wikipedia.org/wiki/Museo_Metropolitano_de_Arte</a
+            >
+          </li>
+
+          <li>
+            Crespo, I. (2020, septiembre 11).
+            <i
+              >Guías de lujo para recorrer los mejores museos del mundo desde
+              casa.</i
+            >
+            Condé Nast Traveler Spain. <br />
+            <a
+              target="_blank"
+              class="linkapa"
+              href="https://www.traveler.es/experiencias/articulos/el-arte-de-los-museos-serie-arte-filmin-el-prado/19051"
+              >https://www.traveler.es/experiencias/articulos/el-arte-de-los-museos-serie-arte-filmin-el-prado/19051</a
+            >
+          </li>
+
+          <li>
+            <i>Profesión a analizar: el guía de museo.</i> (2016, agosto 1).
+            Museistícate. <br />
+            <a
+              target="_blank"
+              class="linkapa"
+              href="https://museisticate.wordpress.com/2016/08/01/profesion-a-analizar-el-guia-de-museo/"
+              >https://museisticate.wordpress.com/2016/08/01/profesion-a-analizar-el-guia-de-museo/</a
+            >
+          </li>
+
+          <li>
+            <i>Los vigilantes de museos.</i> (2016, enero 30). XLSemanal. <br />
+            <a
+              target="_blank"
+              class="linkapa"
+              href="https://www.xlsemanal.com/actualidad/20160131/vigilantes-museos-9449.html"
+            >
+              https://www.xlsemanal.com/actualidad/20160131/vigilantes-museos-9449.html</a
+            >
+          </li>
+
+          <li>
+            <i>The Met Fifth Avenue.</i> (2020, 21 diciembre). The Metropolitan
+            Museum of Art.
+            <a
+              target="_blank"
+              class="linkapa"
+              href="https://www.metmuseum.org/visit/plan-your-visit/met-fifth-avenue/spanish"
+              >https://www.metmuseum.org/visit/plan-your-visit/met-fifth-avenue/spanish</a
+            >
+          </li>
+          <li>
+            Caro. (2021, abril 13).
+            <i>¿Cómo visitar el MET (Metropolitan Museum of Art)?</i> Mejores
+            Planes Viaje Nueva York.
+            https://www.mejores-planes-viaje-nueva-york.com/met-metropolitan-museum-of-art/
+            <br />
+            <a></a>
+          </li>
+        </ul>
+      </article>
+    </main>
+
+    <!-- Pie de página para regresar arriba -->
+    <footer>
+      <p>
+        ¡Has llegado al final de esta página, ¿quieres regresar arriba? Da clic
+        <a href="#inicio">aquí</a>
+      </p>
+    </footer>
+
+    <!-- Menú lateral (oculto) -->
+    <aside class="menuLateral">
+      <div class="tituloLateral">
+        <label class="botonLateral" for="lateral">
+          <hr />
+          <hr />
+          <hr />
+        </label>
+        <h2>Menú de navegación</h2>
+      </div>
       <hr />
-      <p>Josué David Briceño Urquijo</p>
-
-      <h1>Bibliografia</h1>
-      <hr />
-
-      <ul class="listaSeparada">
-        <li>
-          Colaboradores de Wikipedia. (2023).
-          <i>Museo Metropolitano de Arte.</i> Wikipedia, la enciclopedia libre.
-          <br />
-          <a
-            target="_blank"
-            class="linkapa"
-            href="https://es.wikipedia.org/wiki/Museo_Metropolitano_de_Arte"
-            >https://es.wikipedia.org/wiki/Museo_Metropolitano_de_Arte</a
-          >
-        </li>
-
-        <li>
-          Crespo, I. (2020, septiembre 11).
-          <i
-            >Guías de lujo para recorrer los mejores museos del mundo desde
-            casa.</i
-          >
-          Condé Nast Traveler Spain. <br />
-          <a
-            target="_blank"
-            class="linkapa"
-            href="https://www.traveler.es/experiencias/articulos/el-arte-de-los-museos-serie-arte-filmin-el-prado/19051"
-            >https://www.traveler.es/experiencias/articulos/el-arte-de-los-museos-serie-arte-filmin-el-prado/19051</a
-          >
-        </li>
-
-        <li>
-          <i>Profesión a analizar: el guía de museo.</i> (2016, agosto 1).
-          Museistícate. <br />
-          <a
-            target="_blank"
-            class="linkapa"
-            href="https://museisticate.wordpress.com/2016/08/01/profesion-a-analizar-el-guia-de-museo/"
-            >https://museisticate.wordpress.com/2016/08/01/profesion-a-analizar-el-guia-de-museo/</a
-          >
-        </li>
-
-        <li>
-          <i>Los vigilantes de museos.</i> (2016, enero 30). XLSemanal. <br />
-          <a
-            target="_blank"
-            class="linkapa"
-            href="https://www.xlsemanal.com/actualidad/20160131/vigilantes-museos-9449.html"
-          >
-            https://www.xlsemanal.com/actualidad/20160131/vigilantes-museos-9449.html</a
-          >
-        </li>
-
-        <li>
-          <i>The Met Fifth Avenue.</i> (2020, 21 diciembre). The Metropolitan
-          Museum of Art.
-          <a
-            target="_blank"
-            class="linkapa"
-            href="https://www.metmuseum.org/visit/plan-your-visit/met-fifth-avenue/spanish"
-            >https://www.metmuseum.org/visit/plan-your-visit/met-fifth-avenue/spanish</a
-          >
-        </li>
-        <li>
-          Caro. (2021, abril 13).
-          <i>¿Cómo visitar el MET (Metropolitan Museum of Art)?</i> Mejores
-          Planes Viaje Nueva York.
-          https://www.mejores-planes-viaje-nueva-york.com/met-metropolitan-museum-of-art/
-          <br />
-          <a></a>
-        </li>
-      </ul>
-    </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="seleccionado">Inicio</a></li>
+          <li>
+            <a href="historia.html">Historia</a>
+            <ul>
+              <li><a href="historia.html#siglo1">Siglo XIX</a></li>
+              <li><a href="historia.html#siglo2">Siglo XX</a></li>
+              <li><a href="historia.html#siglo3">Siglo XXI</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="actividades.html">Actividades</a>
+            <ul>
+              <li><a href="actividades.html#visitas">Visitas guiadas</a></li>
+              <li><a href="actividades.html#comidas">Comidas y bebidas</a></li>
+              <li><a href="actividades.html#tienda">The Met Store</a></li>
+              <li><a href="actividades.html#obras">Obras maestras</a></li>
+            </ul>
+          </li>
+          <li><a href="personajes.html">Personajes</a></li>
+          <li><a href="bibliografia.html">Bibliografía</a></li>
+        </ul>
+      </nav>
+    </aside>
   </body>
 </html>
