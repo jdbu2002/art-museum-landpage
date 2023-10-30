@@ -275,6 +275,10 @@ footer a:visited {
   margin: 10px 0;
 }
 
+.alreves {
+  flex-direction: row-reverse;
+}
+
 /* Aquí están los estilos de las páginas */
 
 /* Estilos de la página principal */
@@ -345,6 +349,14 @@ footer a:visited {
 .tamañoFijoImagen {
   width: 800px;
   height: auto;
+}
+
+.articulo {
+  margin: 20px 0;
+}
+
+.articulo img:hover {
+  scale: 1.2;
 }
 
 /* Estilos para la página de bibliografía */

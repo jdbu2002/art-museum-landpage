@@ -4,120 +4,194 @@
     <!-- Propiedades del documento -->
     <meta charset="UTF-8" />
     <meta lang="es" />
-    <title>Museo metropolitano de arte - Personajes</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Museo metropolitano de arte</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!-- Aquí colocamos un ícono para la página -->
+    <link rel="icon" type="image/png" href="imagenes/icono.png" />
   </head>
+
   <body>
+    <!-- Input para saber si el menú lateral se debe abrir o no -->
+    <input type="checkbox" id="lateral" />
     <!-- Encabezado de la pagina -->
     <header id="inicio">
-      <a href="index.html">
-        <h1>Museo Metropolitano de Arte</h1>
-      </a>
+      <label class="botonLateral" for="lateral">
+        <hr />
+        <hr />
+        <hr />
+      </label>
+
+      <!-- Título principal -->
+      <h1 class="tituloPrincipal">
+        <a href="index.html">Museo Metropolitano de Arte</a>
+      </h1>
+
+      <!-- Menu de navegacion -->
+      <nav class="menuPrincipal">
+        <a href="historia.html">Historia</a>
+        <a href="actividades.html">Actividades</a>
+        <a href="personajes.html" class="seleccionado">Personajes</a>
+        <a href="bibliografia.html">Bibliografía</a>
+      </nav>
     </header>
 
-    <!-- Menu de navegacion -->
-    <nav>
-      <a href="historia.html">Historia</a>
-      <a href="actividades.html">Actividades</a>
-      <a href="personajes.html" class="seleccionado">Personajes</a>
-      <a href="bibliografia.html">Bibliografía</a>
-    </nav>
+    <main>
+      <section class="maximo">
+        <!-- Primer titulo nivel 1 -->
+        <h1>Personajes</h1>
+        <hr />
 
-    <div class="maximo">
-      <!-- Primer titulo nivel 1 -->
-      <h1>Personajes</h1>
+        <!-- Bloque con la informacion de los personajes que se encuentran en el lugar -->
+        <p>
+          Estas son las distintas personas que se ven involucradas en la
+          actividad del museo.
+        </p>
+      </section>
 
-      <!-- Bloque con la informacion de los personajes que se encuentran en el lugar -->
-      <p>
-        Estas son las distintas personas que se ven involucradas en la actividad
-        del museo.
-      </p>
+      <section class="maximo">
+        <article class="articulo columnas" id="guias">
+          <div class="separacion">
+            <h2>Guias</h2>
+            <hr />
 
-      <hr />
+            <p>
+              Son aquellas personas que realizan los recorridos personalizados y
+              generales a traves del museo para enseñar sobre las distintas
+              obras culturales que la albergan.
+            </p>
+          </div>
 
-      <h2>Guias</h2>
+          <figure class="imagen">
+            <img
+              src="imagenes/GuiaRecorrido.webp"
+              alt="Guias del Museo"
+              class="tamañoFijoImagen"
+            />
+            <figcaption class="cita">Imagen 1. Guias</figcaption>
+          </figure>
+        </article>
 
-      <p>
-        Son aquellas personas que realizan los recorridos personalizados y
-        generales a traves del museo para enseñar sobre las distintas obras
-        culturales que la albergan.
-      </p>
+        <article class="articulo columnas alreves" id="turistas">
+          <div class="separacion">
+            <h2>Turistas</h2>
+            <hr />
+            <p>
+              Son los visitantes que pagan la entrada al museo para recorrer las
+              obras de su interior. En ciertos casos particulares hay personas
+              que pueden entrar sin coste alguno.
+            </p>
+          </div>
+          <figure class="imagen">
+            <img
+              src="imagenes/Turistas.jpg"
+              alt="Turistas"
+              class="tamañoFijoImagen"
+            />
+            <figcaption class="cita">Imagen 2. Turistas</figcaption>
+          </figure>
+        </article>
 
-      <div class="imagen">
-        <img
-          src="imagenes/GuiaRecorrido.webp"
-          alt="Guias del Museo"
-          class="tamañoFijoImagen"
-        />
-        <p class="cita">Imagen 1. Guias</p>
-      </div>
+        <article class="articulo columnas" id="servicios">
+          <div class="separacion">
+            <h2>Servicios Generales</h2>
 
-      <hr />
+            <hr />
 
-      <h2>Turistas</h2>
+            <p>
+              Son los empleados que se encargan de mantener y limpiar el museo,
+              en esto se incluye servicios de aseo, reparaciones y obreros, asi
+              como tambien restauradores de arte.
+            </p>
+          </div>
 
-      <p>
-        Son los visitantes que pagan la entrada al museo para recorrer las obras
-        de su interior. En ciertos casos particulares hay personas que pueden
-        entrar sin coste alguno.
-      </p>
+          <figure class="imagen">
+            <img
+              src="imagenes/ServiciosGenerales.jpg"
+              alt="Servicios Generales"
+              class="tamañoFijoImagen"
+            />
+            <figcaption class="cita">Imagen 3. Servicios generales</figcaption>
+          </figure>
+        </article>
 
-      <div class="imagen">
-        <img
-          src="imagenes/Turistas.jpg"
-          alt="Turistas"
-          class="tamañoFijoImagen"
-        />
-        <p class="cita">Imagen 2. Turistas</p>
-      </div>
+        <article class="articulo columnas alreves" id="vigilante">
+          <div class="separacion">
+            <h2>Vigilantes</h2>
+            <hr />
 
-      <hr />
+            <p>
+              Son los guardias de seguridad que se encargan de mantener la
+              seguridad y la integrad tanto del museo como de las personas que
+              se encuentran en él.
+            </p>
+          </div>
 
-      <h2>Servicios Generales</h2>
+          <figure class="imagen">
+            <img
+              src="imagenes/Vigilantes.jpg"
+              alt="Viligantes"
+              class="tamañoFijoImagen"
+            />
+            <figcaption class="cita">Imagen 4. Vigilancia</figcaption>
+          </figure>
+        </article>
+      </section>
+    </main>
 
-      <p>
-        Son los empleados que se encargan de mantener y limpiar el museo, en
-        esto se incluye servicios de aseo, reparaciones y obreros, asi como
-        tambien restauradores de arte.
-      </p>
-
-      <div class="imagen">
-        <img
-          src="imagenes/ServiciosGenerales.jpg"
-          alt="Servicios Generales"
-          class="tamañoFijoImagen"
-        />
-        <p class="cita">Imagen 3. Servicios generales</p>
-      </div>
-
-      <hr />
-
-      <h2>Vigilantes</h2>
-
-      <p>
-        Son los guardias de seguridad que se encargan de mantener la seguridad y
-        la integrad tanto del museo como de las personas que se encuentran en
-        él.
-      </p>
-
-      <div class="imagen">
-        <img
-          src="imagenes/Vigilantes.jpg"
-          alt="Viligantes"
-          class="tamañoFijoImagen"
-        />
-        <p class="cita">Imagen 4. Vigilancia</p>
-      </div>
-    </div>
-
-    <br />
-
-    <!--Pie de página para regresar arriba -->
+    <!-- Pie de página para regresar arriba -->
     <footer>
       <p>
         ¡Has llegado al final de esta página, ¿quieres regresar arriba? Da clic
         <a href="#inicio">aquí</a>
       </p>
     </footer>
+
+    <!-- Menú lateral (oculto) -->
+    <aside class="menuLateral">
+      <div class="tituloLateral">
+        <label class="botonLateral" for="lateral">
+          <hr />
+          <hr />
+          <hr />
+        </label>
+        <h2>Menú de navegación</h2>
+      </div>
+      <hr />
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li>
+            <a href="historia.html">Historia</a>
+            <ul>
+              <li><a href="historia.html#siglo1">Siglo XIX</a></li>
+              <li><a href="historia.html#siglo2">Siglo XX</a></li>
+              <li><a href="historia.html#siglo3">Siglo XXI</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="actividades.html">Actividades</a>
+            <ul>
+              <li><a href="actividades.html#visitas">Visitas guiadas</a></li>
+              <li><a href="actividades.html#comidas">Comidas y bebidas</a></li>
+              <li><a href="actividades.html#tienda">The Met Store</a></li>
+              <li><a href="actividades.html#obras">Obras maestras</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="personajes.html" class="seleccionado">Personajes</a>
+            <ul>
+              <li><a href="personajes.html#guias">Guías</a></li>
+              <li><a href="personajes.html#turistas">Turistas</a></li>
+              <li>
+                <a href="personajes.html#servicios">Servicios generales</a>
+              </li>
+              <li><a href="personajes.html#vigilante">Vigilantes</a></li>
+            </ul>
+          </li>
+          <li><a href="bibliografia.html">Bibliografía</a></li>
+        </ul>
+      </nav>
+    </aside>
   </body>
 </html>
