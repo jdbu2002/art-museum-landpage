@@ -349,6 +349,17 @@ footer a:visited {
 
 /* Estilos para la página de bibliografía */
 
+.mapa {
+  display: flex;
+  justify-content: center;
+}
+
+.mapa img {
+  max-width: 1144px;
+  width: 90%;
+  border: none;
+}
+
 .listaSeparada {
   list-style: square;
   margin: 10px;
@@ -357,6 +368,7 @@ footer a:visited {
 .listaSeparada li {
   margin: 20px;
   font-size: 18px;
+  word-wrap: break-word;
 }
 
 /* Media Queries */
@@ -394,6 +406,7 @@ footer a:visited {
 @media screen and (max-width: 800px) {
   header h1 {
     font-size: 22px;
+    padding-left: 70px;
   }
 
   .botonLateral {
