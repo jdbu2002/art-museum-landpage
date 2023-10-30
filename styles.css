@@ -151,12 +151,34 @@ header h1 a:hover {
 
 /* Estilos para el menú de navegación */
 .menuPrincipal {
+  position: relative;
   display: flex;
   justify-content: center;
   background-color: #e81923;
   padding: 10px;
   gap: 20px;
   font-size: 18px;
+  list-style: none;
+}
+
+.menuPrincipal ul {
+  visibility: hidden;
+  max-height: 0;
+  position: absolute;
+  bottom: 0;
+  background-color: #8a0e1b;
+  padding: 8px;
+  list-style: none;
+  z-index: 1;
+  text-align: left;
+  transform: translate(-10px, 100%);
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.menuPrincipal li:hover > ul {
+  visibility: visible;
+  max-height: 100vh;
 }
 
 .menuPrincipal a,

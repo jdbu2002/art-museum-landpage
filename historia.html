@@ -27,11 +27,38 @@
       </h1>
 
       <!-- Menu de navegacion -->
-      <nav class="menuPrincipal">
-        <a href="historia.html" class="seleccionado">Historia</a>
-        <a href="actividades.html">Actividades</a>
-        <a href="personajes.html">Personajes</a>
-        <a href="bibliografia.html">Bibliografía</a>
+      <nav aria-label="Menú superior">
+        <ul class="menuPrincipal">
+          <li>
+            <a href="historia.html" class="seleccionado">Historia</a>
+            <ul>
+              <li><a href="historia.html#siglo1">Siglo XIX</a></li>
+              <li><a href="historia.html#siglo2">Siglo XX</a></li>
+              <li><a href="historia.html#siglo3">Siglo XXI</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="actividades.html">Actividades</a>
+            <ul>
+              <li><a href="actividades.html#visitas">Visitas guiadas</a></li>
+              <li><a href="actividades.html#comidas">Comidas y bebidas</a></li>
+              <li><a href="actividades.html#tienda">The Met Store</a></li>
+              <li><a href="actividades.html#obras">Obras maestras</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="personajes.html">Personajes</a>
+            <ul>
+              <li><a href="personajes.html#guias">Guías</a></li>
+              <li><a href="personajes.html#turistas">Turistas</a></li>
+              <li>
+                <a href="personajes.html#servicios">Servicios generales</a>
+              </li>
+              <li><a href="personajes.html#vigilante">Vigilantes</a></li>
+            </ul>
+          </li>
+          <li><a href="bibliografia.html">Bibliografía</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -42,10 +69,10 @@
 
         <hr />
 
-        <h2>Contenido de Historia</h2>
+        <h2 id="contenido">Contenido de Historia</h2>
 
         <!-- Indice del contenido de la pagina con scroll -->
-        <nav>
+        <nav aria-labelledby="contenido">
           <ol class="lista">
             <li><a href="#Siglo1">Siglo XIX</a></li>
             <li><a href="#Siglo2">Siglo XX</a></li>
@@ -247,7 +274,7 @@
         <h2>Menú de navegación</h2>
       </div>
       <hr />
-      <nav>
+      <nav aria-label="Menú lateral">
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li>
