@@ -91,21 +91,21 @@
               />
 
               <!-- Primero colocamos las pines de los textos rojos  -->
-              <button class="pin pasillo" onclick="abrirMapa('pasillo')">
+              <button class="pin pasillo" onclick="openPinInfo('pasillo')">
                 <img
                   src="./imagenes/pin.png"
                   alt="Gran pasillo"
                   draggable="false"
                 />
               </button>
-              <button class="pin romano" onclick="abrirMapa('romano')">
+              <button class="pin romano" onclick="openPinInfo('romano')">
                 <img
                   src="./imagenes/pin.png"
                   alt="Arte griego y romano"
                   draggable="false"
                 />
               </button>
-              <button class="pin africa" onclick="abrirMapa('africa')">
+              <button class="pin africa" onclick="openPinInfo('africa')">
                 <img
                   draggable="false"
                   mg
@@ -113,7 +113,7 @@
                   alt="Artes de áfrica, oceania y las américas"
                 />
               </button>
-              <button class="pin moderno" onclick="abrirMapa('moderno')">
+              <button class="pin moderno" onclick="openPinInfo('moderno')">
                 <img
                   draggable="false"
                   mg
@@ -121,35 +121,35 @@
                   alt="Arte moderno y contemporaneo"
                 />
               </button>
-              <button class="pin robert" onclick="abrirMapa('robert')">
+              <button class="pin robert" onclick="openPinInfo('robert')">
                 <img
                   src="./imagenes/pin.png"
                   alt="Colección Robert Lehman"
                   draggable="false"
                 />
               </button>
-              <button class="pin medieval" onclick="abrirMapa('medieval')">
+              <button class="pin medieval" onclick="openPinInfo('medieval')">
                 <img
                   src="./imagenes/pin.png"
                   alt="Arte medieval"
                   draggable="false"
                 />
               </button>
-              <button class="pin america" onclick="abrirMapa('america')">
+              <button class="pin america" onclick="openPinInfo('america')">
                 <img
                   src="./imagenes/pin.png"
                   alt="Gran pasillo"
                   draggable="false"
                 />
               </button>
-              <button class="pin armaduras" onclick="abrirMapa('armaduras')">
+              <button class="pin armaduras" onclick="openPinInfo('armaduras')">
                 <img
                   src="./imagenes/pin.png"
-                  alt="Brazos y armaduras"
+                  alt="Armas y armaduras"
                   draggable="false"
                 />
               </button>
-              <button class="pin egipcios" onclick="abrirMapa('egipcios')">
+              <button class="pin egipcios" onclick="openPinInfo('egipcios')">
                 <img
                   src="./imagenes/pin.png"
                   alt="Arte egipcio"
@@ -159,38 +159,41 @@
 
               <!-- Después colocamos los pines para los lugares clave -->
 
-              <button class="pin tienda" onclick="abrirMapa('tienda')">
+              <button class="pin tienda" onclick="openPinInfo('tienda')">
                 <img
                   src="./imagenes/pin.png"
                   alt="The Met Store"
                   draggable="false"
                 />
               </button>
-              <button class="pin auditorio" onclick="abrirMapa('auditorio')">
+              <button class="pin auditorio" onclick="openPinInfo('auditorio')">
                 <img
                   src="./imagenes/pin.png"
                   alt="Auditorio"
                   draggable="false"
                 />
               </button>
-              <button class="pin galeria" onclick="abrirMapa('galeria')">
+              <button class="pin galeria" onclick="openPinInfo('galeria')">
                 <img
                   src="./imagenes/pin.png"
                   alt="Galería 199"
                   draggable="false"
                 />
               </button>
-              <button class="pin biblioteca" onclick="abrirMapa('biblioteca')">
+              <button
+                class="pin biblioteca"
+                onclick="openPinInfo('biblioteca')"
+              >
                 <img
                   src="./imagenes/pin.png"
                   alt="Biblioteca"
                   draggable="false"
                 />
               </button>
-              <button class="pin cafe" onclick="abrirMapa('cafe')">
+              <button class="pin cafe" onclick="openPinInfo('cafe')">
                 <img src="./imagenes/pin.png" alt="Café" draggable="false" />
               </button>
-              <button class="pin templo" onclick="abrirMapa('templo')">
+              <button class="pin templo" onclick="openPinInfo('templo')">
                 <img src="./imagenes/pin.png" alt="Templo" draggable="false" />
               </button>
             </div>
@@ -259,5 +262,12 @@
         </ul>
       </nav>
     </aside>
+    <template id="mapPopUp">
+      <article class="popUp" id="mainPopUp">
+        <h2 id="popUpTitle"></h2>
+        <br />
+        <p id="popUpText"></p>
+      </article>
+    </template>
   </body>
 </html>

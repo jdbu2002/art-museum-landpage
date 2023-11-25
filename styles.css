@@ -545,9 +545,26 @@ footer a:visited {
   right: 27.1%;
 }
 
-.templo {
+button.templo {
   bottom: 45.5%;
   right: 5.6%;
+}
+
+article.templo {
+  transform: translate(-75%, -10%);
+}
+
+.popUp {
+  position: absolute;
+  width: 950%;
+  top: 0;
+  left: 50%;
+  background-color: white;
+  transform: translate(-50%, -10%);
+  z-index: 1;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 10px;
 }
 
 /* Media Queries */
