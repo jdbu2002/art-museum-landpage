@@ -421,30 +421,36 @@ footer a:visited {
 /* Estilos para la página del mapa */
 
 .contenedorMapa {
-  max-width: 90%;
-  max-width: 90vw;
-  max-width: 90dvw;
-  overflow: hidden;
   margin: auto;
+
+  max-width: 95%;
 }
 
 .borde {
+  max-width: 95%;
+  margin: auto;
+
+  max-height: 90vh;
+  max-height: 90dvh;
+  box-sizing: border-box;
+
   border: #3c2807 3px solid;
-  width: calc(min(90dvw, min-content));
+  cursor: grab;
 }
 
 .scroll {
-  overflow-x: auto;
+  overflow: hidden;
 }
 
 .mapaMET {
   position: relative;
-  margin: auto;
+  width: fit-content;
 }
 
 .mapaMET img {
   max-width: unset;
   border: none;
+  display: block;
 }
 
 .pin {

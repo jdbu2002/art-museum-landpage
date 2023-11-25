@@ -72,76 +72,130 @@
 
         <p>
           Para ver más información sobre los lugares, oprime los pines de color
-          rojo que aparecen en el mapa
+          rojo que aparecen en el mapa.
         </p>
+        <p>También puedes arrastar el mapa para verlo completo</p>
 
         <br />
 
         <figure class="imagen contenedorMapa">
           <!-- En este contenedor estarán los pines, y serán relativos al
                tamaño del mapa -->
-          <div class="borde">
-            <div class="mapaMET scroll">
+          <div class="borde scroll" id="map">
+            <div class="mapaMET">
               <!-- Colocamos la imagen que dará el tamaño al contenedor -->
-              <img src="./imagenes/mapaMET.jpg" alt="Mapa del museo" />
+              <img
+                src="./imagenes/mapaMET.jpg"
+                alt="Mapa del museo"
+                draggable="false"
+              />
 
               <!-- Primero colocamos las pines de los textos rojos  -->
               <button class="pin pasillo" onclick="abrirMapa('pasillo')">
-                <img src="./imagenes/pin.png" alt="Gran pasillo" />
+                <img
+                  src="./imagenes/pin.png"
+                  alt="Gran pasillo"
+                  draggable="false"
+                />
               </button>
               <button class="pin romano" onclick="abrirMapa('romano')">
-                <img src="./imagenes/pin.png" alt="Arte griego y romano" />
+                <img
+                  src="./imagenes/pin.png"
+                  alt="Arte griego y romano"
+                  draggable="false"
+                />
               </button>
               <button class="pin africa" onclick="abrirMapa('africa')">
                 <img
+                  draggable="false"
+                  mg
                   src="./imagenes/pin.png"
                   alt="Artes de áfrica, oceania y las américas"
                 />
               </button>
               <button class="pin moderno" onclick="abrirMapa('moderno')">
                 <img
+                  draggable="false"
+                  mg
                   src="./imagenes/pin.png"
                   alt="Arte moderno y contemporaneo"
                 />
               </button>
               <button class="pin robert" onclick="abrirMapa('robert')">
-                <img src="./imagenes/pin.png" alt="Colección Robert Lehman" />
+                <img
+                  src="./imagenes/pin.png"
+                  alt="Colección Robert Lehman"
+                  draggable="false"
+                />
               </button>
               <button class="pin medieval" onclick="abrirMapa('medieval')">
-                <img src="./imagenes/pin.png" alt="Arte medieval" />
+                <img
+                  src="./imagenes/pin.png"
+                  alt="Arte medieval"
+                  draggable="false"
+                />
               </button>
               <button class="pin america" onclick="abrirMapa('america')">
-                <img src="./imagenes/pin.png" alt="Gran pasillo" />
+                <img
+                  src="./imagenes/pin.png"
+                  alt="Gran pasillo"
+                  draggable="false"
+                />
               </button>
               <button class="pin armaduras" onclick="abrirMapa('armaduras')">
-                <img src="./imagenes/pin.png" alt="Brazos y armaduras" />
+                <img
+                  src="./imagenes/pin.png"
+                  alt="Brazos y armaduras"
+                  draggable="false"
+                />
               </button>
               <button class="pin egipcios" onclick="abrirMapa('egipcios')">
-                <img src="./imagenes/pin.png" alt="Arte egipcio" />
+                <img
+                  src="./imagenes/pin.png"
+                  alt="Arte egipcio"
+                  draggable="false"
+                />
               </button>
 
               <!-- Después colocamos los pines para los lugares clave -->
 
               <button class="pin tienda" onclick="abrirMapa('tienda')">
-                <img src="./imagenes/pin.png" alt="The Met Store" />
+                <img
+                  src="./imagenes/pin.png"
+                  alt="The Met Store"
+                  draggable="false"
+                />
               </button>
               <button class="pin auditorio" onclick="abrirMapa('auditorio')">
-                <img src="./imagenes/pin.png" alt="Auditorio" />
+                <img
+                  src="./imagenes/pin.png"
+                  alt="Auditorio"
+                  draggable="false"
+                />
               </button>
               <button class="pin galeria" onclick="abrirMapa('galeria')">
-                <img src="./imagenes/pin.png" alt="Galería 199" />
+                <img
+                  src="./imagenes/pin.png"
+                  alt="Galería 199"
+                  draggable="false"
+                />
               </button>
               <button class="pin biblioteca" onclick="abrirMapa('biblioteca')">
-                <img src="./imagenes/pin.png" alt="Biblioteca" />
+                <img
+                  src="./imagenes/pin.png"
+                  alt="Biblioteca"
+                  draggable="false"
+                />
               </button>
               <button class="pin cafe" onclick="abrirMapa('cafe')">
-                <img src="./imagenes/pin.png" alt="Café" />
+                <img src="./imagenes/pin.png" alt="Café" draggable="false" />
               </button>
               <button class="pin templo" onclick="abrirMapa('templo')">
-                <img src="./imagenes/pin.png" alt="Templo" />
+                <img src="./imagenes/pin.png" alt="Templo" draggable="false" />
               </button>
             </div>
           </div>
+          <br />
           <figcaption>
             Figura 1. Mapa del museo con las diferentes secciones y galerías
           </figcaption>
