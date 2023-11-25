@@ -439,7 +439,14 @@ footer a:visited {
 }
 
 .scroll {
-  overflow: hidden;
+  overflow: auto;
+  /* Oculta la barra de scroll */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
 }
 
 .mapaMET {
